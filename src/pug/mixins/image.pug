@@ -1,0 +1,5 @@
+mixin image(src, ext, width, height, alt)
+    picture
+        source(srcset=`images/${src}.avif`, type="image/avif")
+        source(srcset=`images/${src}.webp`, type="image/webp")
+        img(src=`images/${src}.${ext}`, width=width height=height alt=alt, loading="lazy")

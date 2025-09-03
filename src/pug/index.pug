@@ -1,6 +1,9 @@
 extends layouts/layout
 
+block variables
+  - const title = 'Title'
+  - const description = 'Description'
+
 block main
   main.main-container
-    button.btn(type='button') Кнопка
-    img(src="images/map-1.png")
+    h1 Main
