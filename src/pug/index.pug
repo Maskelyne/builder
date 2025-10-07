@@ -1,9 +1,10 @@
 extends layouts/layout
 
 block variables
-  - const title = 'Title'
-  - const description = 'Description'
+  - const title = "Test"
+  - const description = "Test"
 
 block main
-  main.main-container
-    h1 Main
+    main
+        include components/intro
+        include components/order
